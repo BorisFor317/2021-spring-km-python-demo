@@ -25,6 +25,7 @@ print(bmi2)
 
 # fixed
 
+
 def show_person_bmi(name, weight, height):
     bmi = calculate_bmi(weight, height)
     print_bmi_of(name, bmi)
@@ -53,6 +54,7 @@ def get_advice_on_bmi(bmi):
         return "может скушать пончик"
     else:
         return "пора садиться на диету"
+
 
 print("FIXED")
 
