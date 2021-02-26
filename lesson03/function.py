@@ -28,20 +28,12 @@ print(bmi2)
 
 def show_person_bmi(name, weight, height):
     bmi = calculate_bmi(weight, height)
-    print_bmi_of(name, bmi)
+    print("%s: Индекс массы тела = %.2f" % (name, bmi))
 
 
 def show_person_weight_advice(name, weight, height):
     bmi = calculate_bmi(weight, height)
     advice = get_advice_on_bmi(bmi)
-    print_advice_for(name, advice)
-
-
-def print_bmi_of(name, bmi):
-    print("%s: Индекс массы тела = %.2f" % (name, bmi))
-
-
-def print_advice_for(name, advice):
     print(f"{name} {advice}")
 
 
